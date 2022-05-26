@@ -20,7 +20,7 @@ public class DBProvider {
     }
 
     public void connect() throws SQLException {
-        String FullPath = "C:\\Влад\\Мифи\\Laba4-1.0\\" + builder.getDBName() + ".accdb";
+        String FullPath = "C:\\Влад\\Мифи\\Laba4\\" + builder.getDBName() + ".accdb";
         conn = DriverManager.getConnection("jdbc:ucanaccess://" + FullPath, "", "");
         System.err.println(conn.getClientInfo().toString());
         stat = conn.createStatement();
